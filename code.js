@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
           console.log(operator);
         } else {
           display.innerHTML = operate(firstNum, operator, lastNum);
+          operator = button.textContent;
         }
       });
     });
@@ -71,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
     } else if (operator === '/') {
       result = divide(num1, num2);
     }
-    firstNum = result;
+    firstNum = +result;
     lastNum = '';
     operator = '';
     return result;
