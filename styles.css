@@ -4,7 +4,11 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #f5c372;
+    min-height: 100vh;
+    margin: 0px;
+    flex-direction: column;
 }
+
 
 #calculator {
     background-color: #f2e8d8;
